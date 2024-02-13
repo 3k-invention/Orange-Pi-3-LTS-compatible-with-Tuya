@@ -24,7 +24,7 @@ void loop() {
       if (velocity >= 0 && velocity <= 180 && time >= 1 && time <= 255) {
         myservo.write(velocity); // Set the servo velocity
         delay(time * 5); // Wait for the specified time (converted to milliseconds)
-        myservo.write(90); // Return to neutral position
+        myservo.write(90); // Stop 
       }
     }
   }
